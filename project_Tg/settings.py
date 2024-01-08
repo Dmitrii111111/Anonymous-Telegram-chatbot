@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+$ip42u^3am!hni(^bner9$bh#9n-i78!6ud91u-qsxsilm%zg'
+SECRET_KEY = 'SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -85,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'myproject',
         'USER': 'myprojectuser',
-        'PASSWORD': 'lynaklas228',
+        'PASSWORD': '********',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -137,7 +137,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Настройки бота
 
-TOKEN = '6078832640:AAHZke9q8QwJDYj-O6BMuRBkI493RnEX_q4'
+TOKEN = 'TOKEN'
 
 PROXY_URL = 'https://t.me/Dating3ChatBot'
 
@@ -148,7 +148,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-CELERY_BROKER_URL = 'redis://localhost:6379/0'  #
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'  #
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 
 broker_connection_retry_on_startup = True
